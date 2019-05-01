@@ -3,7 +3,7 @@ draw_solution();
 
 function draw_solution(): void{
     let xmlReq = new XMLHttpRequest();
-    xmlReq.open("GET", "solutionOfSudoku.txt", true);
+    xmlReq.open("GET", "solutionOfSudoku.json", true);
 
     xmlReq.onload = function(){
         if(xmlReq.status == 200){
